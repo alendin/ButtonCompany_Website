@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #c7c7c7;
+    text-align: center;
+    transition: background-color 0.7s;
+}
+
+header {
+    padding: 20px;
+    background: #2f2f2f;
+    color: white;
+}
+
+#welcome-message {
+    margin: 0;
+    font-size: 32px;
+}
+
+#company-name {
+    margin: 0;
+    font-size: 40px;
+    color: #cda2ff;
+    transition: color 0.4s;
+}
+
+#company-name:hover {
+    cursor: default; /* arrow */
+    color: #905bcd;
+}
+
+#main-content {  /* stretches to 70% of viewpoint height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#button {  /* color slightly more delayed than size transition */
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    cursor: pointer;  /* hand pointer icon */
+    transition: transform 0.5s ease, filter 1s ease;
+}
+
+#button:hover { /* on hover, slightly increase size and darken */
+    transform: scale(1.07);
+    filter: brightness(.70);
+    transition-duration: 0.7s;
+}
+
+#button:active {
+    transform: scale(0.95);
+    filter: brightness(0.85);
+    transition-duration: 0.5s;
+}
+
+p {
+    margin-top: 20px;
+    color: #5c2f00;
+}
+
+#company-info {
+    font-size: 28px;
+}
+
+#prompt { /* smaller but emboldened */
+    font-size: 22px;
+}
